@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eskişehir Hurdacılık | Mehmet Şefik Ağaç</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Genel Tasarım */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Renk Paleti */
+        :root {
+            --primary-color: #f39c12; /* Hurda/Sanayi Turuncusu */
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+        }
+
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; }
+
+        .services {
+            padding: 50px 5%;
+            text-align: center;
+            background: var(--light-color);
+        }
+
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 3rem; color: var(--primary-color); margin-bottom: 15px; }
+
+        .contact-bar {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .btn-call {
+            background: #fff;
+            color: var(--dark-color);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2 style="margin:0;">ESKİŞEHİR HURDA</h2>
+    </div>
+    <div class="owner">
+        <strong>Mehmet Şefik Ağaç</strong>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Eskişehir'de Güvenilir Geri Dönüşüm</h1>
+    <p>Eskişehir ve çevresinde maden ve metal hurdalarınızı değerinde, kapınızdan alıyoruz.</p>
+</section>
+
+<section class="services">
+    <h2>Alım Yaptığımız Hurda Türleri</h2>
+    <p>Sadece aşağıdaki metallerin alımını profesyonelce gerçekleştirmekteyiz:</p>
+    <div class="service-cards">
+        <div class="card">
+            <i class="fas fa-hammer"></i>
+            <h3>Demir</h3>
+            <p>İnşaat demiri, döküm demir ve tüm ağır demir hurdalarınız alınır.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-cube"></i>
+            <h3>Alüminyum</h3>
+            <p>Profil, kutu ve her nevi alüminyum hurdası değerinde alınır.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-coins"></i>
+            <h3>Bakır</h3>
+            <p>Soyma bakır, lama bakır ve kırkambar bakırlarınız için en iyi fiyat.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-bar">
+    <h2>Hemen Fiyat Teklifi Alın</h2>
+    <p>Adresinize gelelim, hurdalarınızı nakit ödeme ile alalım.</p>
+    <a href="tel:05433719972" class="btn-call">
+        <i class="fas fa-phone-alt"></i> 0543 371 99 72
+    </a>
+</section>
+
+<footer>
+    <p>&copy; 2026 Eskişehir Hurdacılık - Mehmet Şefik Ağaç. Tüm Hakları Saklıdır.</p>
+</footer>
+
+</body>
+</html>
